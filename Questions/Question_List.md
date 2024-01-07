@@ -7,7 +7,7 @@
     * [Odd/Even]()
     * [Maximum]()
     * [Minimum]()
-    * [Triangele]()
+    * [Triangle]()
 5.Loops :
     * [Sum N natural numbers]()
     * [Multiplication Table]()
