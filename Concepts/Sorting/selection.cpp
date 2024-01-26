@@ -31,14 +31,15 @@ int main(){
         cout<<arr[i]<<" ";
     }
 
-// --------- Here is the main code -------
-
-    for(int i = 0;i<n;i++){                     // The outer loop is used to control the number of passes 
-        for(int j = 0; j<n-i;j++){              // Inner loop iterates over all the adjacent elements 
-            if(arr[j]>arr[j+1]){                // Swapping if the elements are in incorrect order
-                swap(&arr[j],&arr[j+1]);
+// --------- Here is Selection sort-------
+    for(int i = 0; i<n;i++){
+        int min = i;
+        for( int j = i + 1 ;j<n;j++){
+            if(arr[j]<arr[min]){
+                min = j;
             }
         }
+        swap(&arr[i],&arr[min]);
     }
 
 // ------ Main code ends here -----------
@@ -51,3 +52,4 @@ int main(){
 
     return 0 ;
 }
+
